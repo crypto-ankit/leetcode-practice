@@ -1,14 +1,13 @@
 const { input } = require('../../input.js');
 
-const invertedInputRightHalfPyramid = (n) =>{
+const invertedInputRightHalfPyramidOptimized = (n) => {
     for(let i=n; i>=1; i--){
-        let row = '';
         for(let j=1; j<=i; j++){
-            row += '*';
+            process.stdout.write('*')
         }
-        console.log(row);
+        console.log()
     }
 }
 
-let n = parseInt(input("Enter number of rows: "));
-invertedInputRightHalfPyramid(n)
+const m = parseInt(input("Enter number of rows: "));
+invertedInputRightHalfPyramidOptimized(m)

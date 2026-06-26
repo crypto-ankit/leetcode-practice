@@ -12,7 +12,13 @@ Given an integer **N**, print a **Right Half Pyramid** star pattern with **N** r
 
 ---
 
-##  Example
+## Reference
+
+**GeeksforGeeks:** https://www.geeksforgeeks.org/dsa/program-to-print-right-half-pyramid-pattern-star-pattern/
+
+---
+
+## Example
 
 ### Input
 
@@ -36,16 +42,19 @@ Given an integer **N**, print a **Right Half Pyramid** star pattern with **N** r
 
 The pattern consists of **N rows**.
 
-- Use the **outer loop** to iterate through each row.
-- For every row, use the **inner loop** to print stars.
-- The number of stars printed in each row is equal to the current row number.
+For each row:
+
+- Print the required number of **stars**.
+- The number of stars increases by **1** in every row.
+
+Since the stars are **left aligned**, no spaces are required.
 
 ---
 
 ## Dry Run (N = 5)
 
-| Row | Number of Stars | Output |
-|-----|-----------------|--------|
+| Row | Stars | Output |
+|------|-------|--------|
 | 1 | 1 | `*` |
 | 2 | 2 | `**` |
 | 3 | 3 | `***` |
@@ -70,7 +79,7 @@ for (let i = 1; i <= n; i++)
 
 ---
 
-### Inner Loop
+### Inner Loop (Print Stars)
 
 The inner loop prints stars for the current row.
 
@@ -80,11 +89,11 @@ for (let j = 1; j <= i; j++)
 
 For each row:
 
-- Row 1 → prints `1` star
-- Row 2 → prints `2` stars
-- Row 3 → prints `3` stars
+- Row 1 → `1` star
+- Row 2 → `2` stars
+- Row 3 → `3` stars
 - ...
-- Row N → prints `N` stars
+- Row N → `N` stars
 
 ---
 
@@ -93,4 +102,4 @@ For each row:
 | Complexity | Value |
 |------------|-------|
 | **Time Complexity** | **O(N²)** |
-| **Space Complexity** | **O(1)** *(Ignoring the output string used for printing)* |
+| **Auxiliary Space Complexity** | **O(1)** |

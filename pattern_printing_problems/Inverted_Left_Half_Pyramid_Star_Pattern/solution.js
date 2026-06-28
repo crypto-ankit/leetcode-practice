@@ -1,6 +1,6 @@
 const { input } = require('../../input.js')
 
-const invertedLeftHandPyramidOptimized = (n) => {
+const invertedLeftHandPyramid = (n) => {
     for(let i = n; i>=1; i--){
         for(let j = 1; j<=n-i; j++){
             process.stdout.write(' ')
@@ -13,4 +13,4 @@ const invertedLeftHandPyramidOptimized = (n) => {
 }
 
 let m = parseInt(input("Enter number of rows: "))
-invertedLeftHandPyramidOptimized(m)
+invertedLeftHandPyramid(m)

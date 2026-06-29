@@ -1,0 +1,9 @@
+Triangular patterns of Alphabets
+Butterfly Pattern
+Sierpinski Triangle
+Pattern of Numbers
+Reverse Character Bridge
+V and Inverted-V
+Trapezium Pattern
+Hour-glass Pattern
+Inner Reducing pattern
